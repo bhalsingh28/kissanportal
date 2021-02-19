@@ -1,0 +1,13 @@
+{
+  "params": {
+    "local_server": "True",
+    "local_url": "mysql://root:@localhost/cs_project",
+    "prod_url": "mysql://root:@localhost/cs_project",
+    "fb_url": "https://facebook.com/cs_project",
+    "tw_url": "https://twitter.com/cs_project",
+    "gh_url": "https://github.com/cs_project",
+    "gmail-user": "sibhal34@gmail.com",
+    "gmail-password": "118211989rsks"
+  }
+}
+

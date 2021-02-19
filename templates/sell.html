@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+   <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{url_for('static', filename='img/sell-bg.png')}}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Kisaan Portal</h1>
+              <span class="subheading">A web Trusted by the Farmers</span>
+            </div>
+          </div>
+        </div>
+     </div>
+    </header>
+
+    <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+
+
+                <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Enter your Personal Details:
+            </h2>
+            <h3 class="post-subtitle">
+              (All your Personal Details are Mandatory)
+            </h3>
+          </a>
+         
+        </div>
+        <hr>
+
+        <!-- <form> -->
+        <form name="sentMessage" id="contactForm" action = "/sell" method= "post" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Full Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="name" name= "name"required data-validation-required-message="Please enter your name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Phone Number" id="mobile" name="mobile" required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Address</label>
+              <input type="tel" class="form-control" placeholder="Address" id="message" name= "address"required data-validation-required-message="Please enter your address.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Aadhar</label>
+              <input type="Aadhar" class="form-control" placeholder="Aadhar Number" id="Aadhar" name="adhar_card" required data-validation-required-message="Please enter your Aadhar number.">
+              <p class="help-block text-danger"></p>
+            </div>
+            </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>PAN Card</label>
+              <input type="text" class="form-control" placeholder="PAN Card" id="pan_" name= "pan_"required data-validation-required-message="Please enter your PAN.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>State or Union Territory</label>
+              <input type="text" class="form-control" placeholder="State or union territory" id="ut_state" name= "ut_state"required data-validation-required-message="Please enter your State or Union Territory.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Crop Name</label>
+              <input type="text" class="form-control" placeholder="Crop Name" id="crop_name" name= "crop_name"required data-validation-required-message="Please enter your Crop Name.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Crop Type</label>
+              <input type="text" class="form-control" placeholder="Crop Type" id="crop_type" name= "crop_type"required data-validation-required-message="Please enter your Crop Type.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Quantity</label>
+              <input type="text" class="form-control" placeholder="Quantity(in quintal)" id="quantity" name= "quantity"required data-validation-required-message="Please enter your Crop Quantity.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+       
+
+        <br>
+        <br>
+       
+
+          <div id="success"></div>
+          <div class="form-group">
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+          </div>
+
+          <br>
+          <div id="success"></div>
+ 
+
+        </form>
+        
+        </tr>
+
+      </table>
+
+          <p></p>
+          <p></p>
+          <p></p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <br>
+
+{% endblock %}
